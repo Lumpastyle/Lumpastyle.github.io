@@ -16,6 +16,7 @@ gulp.task('scss', function() {
         .pipe(gulp.dest('dist/css'))
         .pipe(sync.stream());
 });
+
 gulp.task('js', function() {
     return gulp.src('app/js/*.js')
         .pipe(compressor_js(

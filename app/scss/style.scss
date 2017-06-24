@@ -1,0 +1,49 @@
+@import "vendors/reset";
+@import "vendors/bootstrap-grid.min";
+@import "global/mixins";
+
+@media (min-width:1920px){.container{width:1440px;max-width:100%}}
+
+@include font-face(SourceSansPro, SourceSansPro-Regular, normal, normal);
+@include font-face(SourceSansPro, SourceSansPro-Italic, normal, italic);
+@include font-face(SourceSansPro, SourceSansPro-Light, 300, normal);
+@include font-face(SourceSansPro, SourceSansPro-Semibold, 500, normal);
+@include font-face(Somatic, Somatic-Rounded, normal, normal);
+
+$main-color: #4448A4;
+$lightblue: #EDEFFD;
+$black: #2D272D;
+$grey: #9F9F9D;
+$lightgrey: #EEEEEE;
+
+body {
+    font-family: "SourceSansPro", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    .logo {
+        font-family: Somatic, sans-serif;
+        font-size: 1.5em;
+
+        span {
+            font-size: inherit;
+            color: $main-color;
+        }
+    }
+}
+
+h1 {
+    font-family: Somatic, sans-serif;
+    font-size: 3.375em;
+
+    span {
+        font-size: inherit;
+        color: $main-color;
+    }
+}
+
+h2 {
+    font-family: Somatic, sans-serif;
+    font-size: 2.25em;
+}
