@@ -1,8 +1,71 @@
 @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
-  @font-face {
-    font-family: $font-family;
-    src: url(‘../assets/fonts/#{$file-path}.ttf’) format(‘truetype’);
-    font-weight: $font-weight;
-    font-style: $font-style;
-  }
+    @font-face {
+        font-family: $font-family;
+        src: url(‘../assets/fonts/#{$file-path}.ttf’) format(‘truetype’);
+        font-weight: $font-weight;
+        font-style: $font-style;
+    }
+}
+
+/* ANIMATIONS */
+
+@mixin transition5 {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+@mixin underline($startingWidth, $marginTop) {
+    &:after {
+        content: "";
+        width: $startingWidth;
+        height: 10px;
+        background-color: $lightblue;
+        position: absolute;
+        margin-top: $marginTop;
+        z-index: -1;
+        left: 0;
+
+        @include transition5;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@mixin hd {
+    @media (min-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: 1140px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: 576px) {
+        @content;
+    }
 }
