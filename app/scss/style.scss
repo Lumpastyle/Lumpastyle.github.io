@@ -35,7 +35,7 @@ h2 {
 
 .hero {
     header {
-        margin-top: 30px;
+        margin-top: 50px;
 
         .logo {
             font-family: Somatic, sans-serif;
@@ -75,7 +75,7 @@ h2 {
     }
 
     h1 {
-        margin-top: 200px;
+        margin-top: 250px;
         font-family: Somatic, sans-serif;
         font-size: 3.375em;
         line-height: 1.2;
@@ -102,7 +102,7 @@ h2 {
 
 .about {
     position: relative;
-    margin-top: 200px;
+    margin-top: 300px;
 
     p {
         font-weight: 300;
@@ -127,17 +127,20 @@ h2 {
         }
     }
 
-    img {
+    .bio_pic {
         position: absolute;
-        max-width: 350px;
         width: 100%;
-        height: 200px;
+        max-width: 500px;
+        height: 250px;
         right: 10%;
-        top: 50px;
-        background: $lightgrey;
+        top: 0;
+        background: url('../assets/img/IMG_20170127_165953.png') 30% 40%;
+        background-size: 150%;
+        border: none;
 
         @include xlarge {
-            max-width: 500px;
+            max-width: 350px;
+            height: 300px;
         }
 
         &:after {
@@ -155,18 +158,71 @@ h2 {
 }
 
 .projects {
-    margin-top: 200px;
+    margin: 300px auto;
 
     li {
+        position: relative;
         width: 100%;
-        max-width: 300px;
-        height: 200px;
         margin: 50px auto;
-        background: $lightgrey;
 
-        @include xlarge {
-            max-width: 400px;
-            height: 250px;
+        a {
+            text-decoration: none;
+        }
+
+        .proj_pic {
+            padding: 50px 75px;
+            width: 300px;
+            height: 150px;
+            border: 1px solid $lightgrey;
+            margin: 0 auto;
+
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100px;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+
+                @include transition5;
+            }
+
+            [alt="logo_twitch"] {
+                margin-top: 10px;
+            }
+        }
+
+        .proj_name {
+            display: block;
+            margin-top: 10px;
+            font-weight: 300;
+            text-align: center;
+
+            span {
+                font-size: inherit;
+                font-weight: normal;
+                position: relative;
+
+                @include underline(0,10px);
+            }
+        }
+
+        &:hover {
+            .proj_pic {
+                img {
+                    -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                }
+            }
+
+            .proj_name {
+                span {
+                    color: $main-color;
+
+                    &:after {
+                        width: 150%;
+                    }
+                }
+            }
         }
     }
 }
