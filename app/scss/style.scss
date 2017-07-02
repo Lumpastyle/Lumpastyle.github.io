@@ -20,6 +20,7 @@ $lightgrey: #EEEEEE;
 body {
     font-family: "SourceSansPro", sans-serif;
     -webkit-font-smoothing: antialiased;
+    color: #2D272D;
 }
 
 h2 {
@@ -63,6 +64,7 @@ h2 {
                     text-decoration: none;
                     letter-spacing: 1.5px;
                     font-size: .8em;
+                    color: $black;
                 }
 
                 @include underline(0,10px);
@@ -167,6 +169,7 @@ h2 {
 
         a {
             text-decoration: none;
+            color: $black;
         }
 
         .proj_pic {
@@ -175,6 +178,8 @@ h2 {
             height: 150px;
             border: 1px solid $lightgrey;
             margin: 0 auto;
+
+            @include transition5;
 
             img {
                 display: block;
@@ -208,6 +213,8 @@ h2 {
 
         &:hover {
             .proj_pic {
+                border: 1px solid $main-color;
+
                 img {
                     -webkit-filter: grayscale(0%);
                     filter: grayscale(0%);

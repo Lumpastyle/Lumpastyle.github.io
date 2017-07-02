@@ -17,12 +17,12 @@
     transition: all .5s ease-in-out;
 }
 
-@mixin underline($startingWidth, $marginTop) {
+@mixin underline($startingWidth, $marginTop, $backColor : $lightblue) {
     &:after {
         content: "";
         width: $startingWidth;
         height: 10px;
-        background-color: $lightblue;
+        background-color: $backColor;
         position: absolute;
         margin-top: $marginTop;
         z-index: -1;
