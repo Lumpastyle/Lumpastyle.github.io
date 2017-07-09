@@ -96,3 +96,104 @@ p {
         color: #fff;
     }
 }
+
+.img-cover {
+    margin: 50px 0;
+
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .desc {
+        width: 50%;
+    }
+
+    .infos,
+    .skills {
+        width: 20%;
+    }
+
+    ul li,
+    .year {
+        margin: 10px auto;
+    }
+}
+
+.gallery {
+    margin: 200px auto 100px;
+
+    img.main {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.navig {
+    margin: 100px 0 0 0;
+
+    a {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 150px;
+        background: $main-color;
+        text-decoration: none;
+        text-align: center;
+
+        .previous,
+        .next {
+            display: inline-block;
+            color: #fff;
+            line-height: 150px;
+            font-weight: 500;
+            padding: 0;
+        }
+
+        &:last-child {
+            border-left: 2px solid $black;
+        }
+
+        &:hover .previous {
+            padding-right: 100px;
+
+            @include transition5;
+        }
+
+        &:hover .next {
+            padding-left: 100px;
+
+            @include transition5;
+        }
+    }
+}
+
+footer {
+    background: $black;
+    height: 50px;
+    width: 100%;
+
+    .copyright {
+        float: left;
+        color: #fff;
+        font-size: 12px;
+        line-height: 50px;
+    }
+
+    .socials {
+        float: right;
+        line-height: 50px;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+}

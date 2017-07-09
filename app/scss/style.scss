@@ -233,3 +233,56 @@ h2 {
         }
     }
 }
+
+footer {
+    background: $black;
+    height: 50px;
+    width: 100%;
+
+    .copyright {
+        float: left;
+        color: #fff;
+        font-size: 12px;
+        line-height: 50px;
+    }
+
+    .socials {
+        float: right;
+        line-height: 50px;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+}
+
+
+.wp1 {
+    opacity: 0;
+}
+
+.delay-05s {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.delay-1s {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.delay-15s {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+
+.delay-2s {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+.delay-25s {
+    animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
