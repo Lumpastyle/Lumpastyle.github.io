@@ -1,10 +1,12 @@
-<?php require_once 'project-header.php'; ?>
+<?php
+$bodyclass = "demo";
+require_once 'header.php'; ?>
 
-<div class="demo-cover-primary">
+<section class="demo-cover-primary">
     <img src="assets/img/cover-test.png" alt="">
-</div>
+</section>
 
-<div class="demo-details"> <!-- start details -->
+<section class="demo-details"> <!-- start details -->
     <div class="demo-desc">
         <h3>Détails du projet</h3>
         <p>
@@ -29,9 +31,9 @@
             <li>Sketch</li>
         </ul>
     </div>
-</div> <!-- end details -->
+</section> <!-- end details -->
 
-<div class="demo-gallery"> <!-- start gallery -->
+<section class="demo-gallery"> <!-- start gallery -->
     <img src="assets/img/maquette-test.png" alt="" class="demo-cover-secondary">
 
     <ul>
@@ -40,7 +42,7 @@
         <li class="gallery-item"><img src="" alt=""></li>
         <li class="gallery-item"><img src="" alt=""></li>
     </ul>
-</div> <!-- end gallery -->
+</section> <!-- end gallery -->
 
 <div class="demo-nav">
     <a href=""><div class="nav-previous">Projet précedent</div></a>

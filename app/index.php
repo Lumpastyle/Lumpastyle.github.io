@@ -1,59 +1,59 @@
-<?php require_once 'header.php'; ?>
+<?php
+$bodyclass = "homepage";
+require_once 'header.php'; ?>
 
-<div id="about" class="about"> <!-- start about -->
-    <h2 class="h2"><span>A propos</span> de moi</h2>
+<section id="about" class="about"> <!-- start about -->
+    <h2 class="h2"><span class="blue">A propos</span> de moi</h2>
     <p class="about-desc">
-        Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+        Etudiant en 2ème année de Bachelor Web à <span>HETIC</span>, actuellement UX Designer chez Immovesting, je suis à la <span>recherche d’une alternance</span> pour Octobre 2017 en tant que Designer UI. Passionné d'<span>esport</span> et de jeux vidéos, j'aime relever les défis et la <span>compétition</span> est un moteur pour moi, que ce soit dans la vie ou dans les jeux.
         <br>
         <a class="link" href="javascript:void(0)">Télécharger mon CV</a>
     </p>
     <div class="bio_pic"></div>
-</div> <!-- end about -->
+</section> <!-- end about -->
 
 
-<div id="projects" class="projects"> <!-- start projects -->
-    <h2 class="offset-1">Mes <span>projets</span></h2>
+<section id="projects" class="projects"> <!-- start projects -->
+    <h2 class="h2">Mes <span class="blue">projets</span></h2>
 
-    <ul>
-        <div class="row">
-            <li class="project">
-                <a href="projet.php">
-                    <div class="project-image"><img src="assets/img/imv_logo.png" alt="logo_imv"></div>
-                    <div class="project-name"><span>Immovesting</span>, refonte de la charte</div>
-                </a>
-            </li>
-            <li class="project">
-                <a href="projet.php">
-                    <div class="project-image"><img src="assets/img/twitch_logo.png" alt="logo_twitch"></div>
-                    <div class="project-name"><span>Twitch.tv</span>, redesign spontané</div>
-                </a>
-            </li>
-            <li class="project">
-                <a href="projet.php">
-                    <div class="project-image"><img src="assets/img/tsoh_logo.png" alt="logo_tsoh"></div>
-                    <div class="project-name"><span>Tsoh Activities</span>, redesign onepage</div>
-                </a>
-            </li>
-            <li class="project">
-                <a href="projet.php">
-                    <div class="project-image"><img src="assets/img/imv_logo.png" alt="logo_imv"></div>
-                    <div class="project-name"><span>echOpen</span>, design et création de l'app</div>
-                </a>
-            </li>
-            <li class="project">
-                <a href="projet.php">
-                    <div class="project-image"><img src="assets/img/twitch_logo.png" alt="logo_twitch"></div>
-                    <div class="project-name"><span>DailyUI</span>, entrainement UI</div>
-                </a>
-            </li>
-            <li class="project">
-                <a href="projet.php">
-                    <div class="project-image"><img src="assets/img/tsoh_logo.png" alt="logo_tsoh"></div>
-                    <div class="project-name"><span>MARS</span>, redesign spontanné</div>
-                </a>
-            </li>
-        </div>
+    <ul class="project-list">
+        <li class="project-item">
+            <a href="projet.php">
+                <div class="project-image"><img src="assets/img/imv_logo.png" alt="logo_imv"></div>
+                <div class="project-name"><span class="">Immovesting</span>, refonte de la charte</div>
+            </a>
+        </li>
+        <li class="project-item">
+            <a href="projet.php">
+                <div class="project-image"><img src="assets/img/twitch_logo.png" alt="logo_twitch"></div>
+                <div class="project-name"><span class="">Twitch.tv</span>, redesign spontané</div>
+            </a>
+        </li>
+        <li class="project-item">
+            <a href="projet.php">
+                <div class="project-image"><img src="assets/img/tsoh_logo.png" alt="logo_tsoh"></div>
+                <div class="project-name"><span class="">Tsoh Activities</span>, redesign onepage</div>
+            </a>
+        </li>
+        <li class="project-item">
+            <a href="projet.php">
+                <div class="project-image"><img src="assets/img/imv_logo.png" alt="logo_imv"></div>
+                <div class="project-name"><span class="">echOpen</span>, design et création de l'app</div>
+            </a>
+        </li>
+        <li class="project-item">
+            <a href="projet.php">
+                <div class="project-image"><img src="assets/img/twitch_logo.png" alt="logo_twitch"></div>
+                <div class="project-name"><span class="">DailyUI</span>, entrainement UI</div>
+            </a>
+        </li>
+        <li class="project-item">
+            <a href="projet.php">
+                <div class="project-image"><img src="assets/img/tsoh_logo.png" alt="logo_tsoh"></div>
+                <div class="project-name"><span class="">MARS</span>, redesign spontanné</div>
+            </a>
+        </li>
     </ul>
-</div> <!-- end projects -->
+</section> <!-- end projects -->
 
 <?php require_once 'footer.php';
