@@ -28,16 +28,9 @@ body {
 
     @media screen and (min-width: 1920px) {
         font-size: 20px;
-
-        @media
-        only screen and (-webkit-min-device-pixel-ratio: 2),
-        only screen and (   min--moz-device-pixel-ratio: 2),
-        only screen and (     -o-min-device-pixel-ratio: 2/1),
-        only screen and (        min-device-pixel-ratio: 2),
-        only screen and (                min-resolution: 192dpi),
-        only screen and (                min-resolution: 2dppx) {
-            font-size: 22px;
-        }
+    }
+    @include retina() {
+        font-size: 22px;
     }
 }
 
@@ -50,6 +43,7 @@ a { font-size: inherit; color: inherit; text-decoration: none;}
 .lightblue { color: $lightblue !important; }
 .white { color: $white !important; }
 .black { color: $black !important; }
+.text-center { text-align: center; }
 
 .loud {
     @extend .blue;
@@ -61,7 +55,11 @@ a { font-size: inherit; color: inherit; text-decoration: none;}
 .h1, .h2, .h3, .h4, .h5, .h6 { font-family: $my-font; font-weight: 600; }
 .h1, .h2 { line-height: 1.1; }
 .h3, .h4 { line-height: 1.3; }
-.h1 { font-size: 3.998em; letter-spacing: -2px; margin-top: 5em; }
+.h1 {
+    font-size: 3.998em;
+    letter-spacing: -2px;
+    margin-top: 5em;
+}
 .h2 { font-size: 2.827em; letter-spacing: -1px; }
 .h3 { font-size: 1.999em; }
 .h4 { font-size: 1.414em; }
@@ -83,7 +81,11 @@ a { font-size: inherit; color: inherit; text-decoration: none;}
     display: inline-block;
     font-size: 1em;
 
-    @include underline(0,15px);
+    @include underline(0,12px);
+
+    @media screen and (min-width: 1920px) {
+        @include underline(0,17px);
+    }
 
     & + & {
         margin-left: 50px;
@@ -98,18 +100,23 @@ a { font-size: inherit; color: inherit; text-decoration: none;}
 
 .about {
     @extend %section-margin;
+    text-align: center;
 }
 
 .about-desc {
     @extend %content-text;
-    margin-top: 2em;
+    margin: 2em auto auto;
 
     .link {
         display: inline-block;
         margin-top: 1em;
         @extend .loud;
 
-        @include underline(30px,17px);
+        @include underline(30px,12px);
+
+        @media screen and (min-width: 1920px) {
+            @include underline(30px,17px);
+        }
     }
 }
 
@@ -186,15 +193,26 @@ a { font-size: inherit; color: inherit; text-decoration: none;}
     span {
         font-weight: normal;
 
-        @include underline(0,15px);
+        @include underline(0,12px);
+
+        @media screen and (min-width: 1920px) {
+            @include underline(0,17px);
+        }
     }
 }
 
 /* FOOTER */
 
 .footer {
-    margin-top: 150px;
+    @extend %section-margin;
     margin-bottom: 100px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer-state {
@@ -202,7 +220,15 @@ a { font-size: inherit; color: inherit; text-decoration: none;}
 }
 
 .footer-copyright .mail {
-    @include underline(30px,17px);
+    @include underline(30px,12px);
+
+    @media screen and (min-width: 1920px) {
+        @include underline(30px,17px);
+    }
+}
+
+.footer-socials {
+    justify-self: flex-end;
 }
 
 .socials-item {

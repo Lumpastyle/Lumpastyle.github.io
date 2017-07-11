@@ -14,7 +14,7 @@ require_once 'header.php'; ?>
 
 
 <section id="projects" class="projects"> <!-- start projects -->
-    <h2 class="h2">Mes <span class="blue">projets</span></h2>
+    <h2 class="h2 text-center">Mes <span class="blue">projets</span></h2>
 
     <ul class="project-list">
         <li class="project-item">

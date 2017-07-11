@@ -42,11 +42,16 @@
 
 %content-text {
     font-weight: 300;
-    max-width: 50%;
+    max-width: 60%;
     width: 100%;
     margin-top: 1em;
+    line-height: 1.6;
 
     span {
-        @include underline(100%,17px);
+        @include underline(100%,12px);
+
+        @media screen and (min-width: 1920px) {
+            @include underline(100%,17px);
+        }
     }
 }
