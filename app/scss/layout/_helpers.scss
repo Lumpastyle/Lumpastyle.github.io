@@ -28,8 +28,8 @@
 }
 
 .bold-font {
-    font-family: $content-font;
-    font-weight: 600;
+    font-family: $my-font;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: .8em;
@@ -47,6 +47,6 @@
     margin-top: 1em;
 
     span {
-        @include underline(100%,15px);
+        @include underline(100%,17px);
     }
 }
