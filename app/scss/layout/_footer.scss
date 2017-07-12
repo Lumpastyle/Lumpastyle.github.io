@@ -1,0 +1,38 @@
+.footer {
+    @extend %section-margin;
+    margin-bottom: 100px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-state {
+    @extend .h4;
+}
+
+.footer-copyright .mail {
+    @include underline(30px,12px);
+
+    @media screen and (min-width: 1920px) {
+        @include underline(30px,17px);
+    }
+}
+
+.footer-socials {
+    justify-self: flex-end;
+}
+
+.socials-item {
+
+    img {
+        height: 30px;
+    }
+
+    & + & {
+        margin-left: 1.5em;
+    }
+}

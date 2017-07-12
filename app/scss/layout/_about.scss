@@ -1,0 +1,25 @@
+.about {
+    @extend %section-margin;
+    text-align: center;
+}
+
+.about-desc {
+    @extend %content-text;
+    margin: 2em auto auto;
+
+    .link {
+        display: inline-block;
+        margin-top: 1em;
+        @extend .loud;
+
+        @include underline(30px,12px);
+
+        @media screen and (min-width: 1920px) {
+            @include underline(30px,17px);
+        }
+
+        @include retina() {
+            @include underline(30px,20px);
+        }
+    }
+}

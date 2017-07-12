@@ -1,0 +1,114 @@
+
+
+.demo-cover-primary {
+    margin: 50px 0;
+
+    img {
+        display: block;
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.demo-details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.demo-title {
+    @extend .bold-font;
+    margin: 25px auto 10px;
+    color: rgba(255,255,255,0.2);
+}
+
+.demo-desc {
+    width: 30%;
+}
+
+.demo-infos,
+.demo-skills {
+    width: 20%;
+}
+
+.demo-details-item,
+.demo-year {
+    margin: 10px auto;
+}
+
+.demo-gallery {
+    margin: 200px auto 100px;
+}
+
+.demo-cover-secondary {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.demo-nav {
+    margin-bottom: 50px;
+}
+
+.nav-previous,
+.nav-next {
+    display: block;
+    width: 50%;
+    height: 100px;
+    background: grey;
+    line-height: 100px;
+    padding: 0 50px;
+    background: $black;
+    z-index: 1;
+}
+
+.nav-previous {
+    background-color: $main-color;
+    position: relative;
+
+    &:after {
+        z-index: 10;
+        content: "";
+        width: 100%;
+        height: 100px;
+        background-color: $black;
+        position: absolute;
+        left: 0;
+        @include transition5;
+    }
+
+    &:hover:after {
+        width: 0;
+    }
+}
+
+.nav-next {
+    position: relative;
+
+    .nav-hover {
+        right: 50px;
+    }
+
+    &:after {
+        z-index: 10;
+        content: "";
+        width: 0;
+        height: 100px;
+        background-color: $main-color;
+        position: absolute;
+        left: 0;
+        @include transition5;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+.nav-hover {
+    position: absolute;
+    background: none;
+    z-index: 100;
+}

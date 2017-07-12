@@ -5,8 +5,7 @@
 
 @import "layout/helpers";
 @import "layout/header";
-@import "layout/about";
-@import "layout/projects";
+@import "layout/demo";
 @import "layout/footer";
 
 @include font-face("SourceSansPro", "SourceSansPro-Light", 300, normal);
@@ -17,7 +16,8 @@
 
 body {
     width: 100%;
-    color: $black;
+    background: $black;
+    color: $white;
     font-family: $my-font;
     font-weight: 300;
     font-size: 16px;
@@ -34,4 +34,29 @@ body {
     @include retina() {
         font-size: 22px;
     }
+}
+
+.h1 {
+    margin-top: 3em;
+}
+
+.hero-menu-item {
+    @include underline(0,12px, $main-color);
+
+    @media screen and (min-width: 1920px) {
+        @include underline(0,17px, $main-color);
+    }
+}
+
+.footer-copyright .mail {
+    color: $white !important;
+    @include underline(30px,12px, $main-color);
+
+    @media screen and (min-width: 1920px) {
+        @include underline(30px,17px, $main-color);
+    }
+}
+
+.footer {
+    margin-top: 0;
 }

@@ -11,8 +11,15 @@ gulp.task('html', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('scss', function() {
+gulp.task('scss1', function() {
     return gulp.src('app/scss/style.scss')
+        .pipe(scss())
+        .pipe(gulp.dest('dist/css'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('scss2', function() {
+    return gulp.src('app/scss/styledemo.scss')
         .pipe(scss())
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.stream());
@@ -49,14 +56,15 @@ gulp.task('jquery', function () {
         .pipe(gulp.dest('dist/js/'));
 });
 
-gulp.task('browserSync', ['html', 'scss', 'js', 'svg', 'img', 'fonts', 'jquery'],  function() {
+gulp.task('browserSync', ['html', 'scss1', 'scss2', 'js', 'svg', 'img', 'fonts', 'jquery'],  function() {
     php.server({}, function (){
         browserSync({
             proxy: '127.0.0.1:8000/dist/'
         });
     });
 
-    gulp.watch('./app/scss/**/*.scss', ['scss']);
+    gulp.watch('./app/scss/**/*.scss', ['scss1']);
+    gulp.watch('./app/scss/**/_demo.scss', ['scss2']);
     gulp.watch('./app/*.php', ['html']);
     gulp.watch('./app/js/*.js', ['js']);
 });

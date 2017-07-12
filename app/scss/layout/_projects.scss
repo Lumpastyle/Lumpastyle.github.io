@@ -1,0 +1,78 @@
+.projects {
+    @extend %section-margin;
+}
+
+.project-list {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.project-item {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    margin: 2em auto;
+
+    &:hover .project-image {
+        border: 1px solid $main-color;
+
+        img {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+        }
+    }
+
+    &:hover .project-name {
+
+        span {
+            color: $main-color;
+
+            &:after {
+                width: 150%;
+            }
+        }
+    }
+}
+
+.project-image {
+    padding: 50px 75px;
+    min-width: 300px;
+    width: 50%;
+    height: 150px;
+    border: 1px solid $lightgrey;
+    margin: 0 auto;
+
+    @extend %transition5;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        @extend %transition5;
+    }
+
+    [alt="logo_twitch"] {
+        margin-top: 10px;
+    }
+}
+
+.project-name {
+    margin-top: 10px;
+
+    span {
+        font-weight: normal;
+
+        @include underline(0,12px);
+
+        @media screen and (min-width: 1920px) {
+            @include underline(0,17px);
+        }
+    }
+}

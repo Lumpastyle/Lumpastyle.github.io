@@ -1,0 +1,28 @@
+.header {
+    margin-top: 80px;
+}
+
+.hero-logo {
+    font-family: $title-font;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.hero-menu-item {
+    display: inline-block;
+    font-size: 1em;
+
+    @include underline(0,12px);
+
+    @media screen and (min-width: 1920px) {
+        @include underline(0,17px);
+    }
+
+    & + & {
+        margin-left: 50px;
+    }
+}
+
+.hero-desc {
+    @extend %content-text;
+}

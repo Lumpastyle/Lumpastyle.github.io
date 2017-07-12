@@ -18,39 +18,21 @@ require_once 'header.php'; ?>
 
     <ul class="project-list">
         <li class="project-item">
-            <a href="projet.php">
+            <a href="demo-immovesting.php">
                 <div class="project-image"><img src="assets/img/imv_logo.png" alt="logo_imv"></div>
                 <div class="project-name"><span class="">Immovesting</span>, refonte de la charte</div>
             </a>
         </li>
         <li class="project-item">
-            <a href="projet.php">
-                <div class="project-image"><img src="assets/img/twitch_logo.png" alt="logo_twitch"></div>
-                <div class="project-name"><span class="">Twitch.tv</span>, redesign spontané</div>
-            </a>
-        </li>
-        <li class="project-item">
-            <a href="projet.php">
+            <a href="demo-tsoh.php">
                 <div class="project-image"><img src="assets/img/tsoh_logo.png" alt="logo_tsoh"></div>
                 <div class="project-name"><span class="">Tsoh Activities</span>, redesign onepage</div>
             </a>
         </li>
         <li class="project-item">
-            <a href="projet.php">
+            <a href="demo-echopen.php">
                 <div class="project-image"><img src="assets/img/imv_logo.png" alt="logo_imv"></div>
                 <div class="project-name"><span class="">echOpen</span>, design et création de l'app</div>
-            </a>
-        </li>
-        <li class="project-item">
-            <a href="projet.php">
-                <div class="project-image"><img src="assets/img/twitch_logo.png" alt="logo_twitch"></div>
-                <div class="project-name"><span class="">DailyUI</span>, entrainement UI</div>
-            </a>
-        </li>
-        <li class="project-item">
-            <a href="projet.php">
-                <div class="project-image"><img src="assets/img/tsoh_logo.png" alt="logo_tsoh"></div>
-                <div class="project-name"><span class="">MARS</span>, redesign spontanné</div>
             </a>
         </li>
     </ul>
