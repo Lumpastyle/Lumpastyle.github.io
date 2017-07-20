@@ -46,7 +46,7 @@
                 </div>
             </header>
 
-            <h1 class="h1 text-center"><?=$projectname?></h1>
+            <!-- <h1 class="h1 text-center"><?=$projectname?></h1> -->
         </div> <!-- end hero -->
 
     <?php } ?>
