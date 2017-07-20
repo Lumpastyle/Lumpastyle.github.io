@@ -19,7 +19,7 @@ require_once 'header.php'; ?>
     <ul class="project-list">
         <li class="project-item">
             <a href="demo-immovesting.php">
-                <div class="project-image"><img src="assets/img/imv_logo.png" alt="logo_imv"></div>
+                <div class="project-image"><img src="assets/img/immovesting-logo.svg" alt="logo_immovesting"></div>
                 <div class="project-name"><span class="">Immovesting</span>, refonte de la charte</div>
             </a>
         </li>
