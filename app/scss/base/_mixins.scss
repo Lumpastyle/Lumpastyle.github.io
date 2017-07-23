@@ -52,3 +52,15 @@
         }
     }
 }
+
+@mixin w1200 {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin w600 {
+    @media (max-width: 600px) {
+        @content;
+    }
+}

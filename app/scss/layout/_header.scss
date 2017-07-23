@@ -1,5 +1,8 @@
 .header {
     margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-logo {
@@ -21,8 +24,15 @@
     & + & {
         margin-left: 50px;
     }
+
+    @include w600 {
+
+        &.to-hide {
+            display: none;
+        }
+    }
 }
 
-.hero-desc {
-    @extend %content-text;
+.h1 div {
+    display: block;
 }

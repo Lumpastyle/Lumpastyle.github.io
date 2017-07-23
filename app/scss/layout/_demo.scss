@@ -16,6 +16,10 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
+
+    @include w600 {
+        flex-direction: column;
+    }
 }
 
 .demo-title {
@@ -26,11 +30,19 @@
 
 .demo-desc {
     width: 30%;
+
+    @include w600 {
+        width: auto;
+    }
 }
 
 .demo-infos,
 .demo-skills {
     width: 20%;
+
+    @include w600 {
+        width: auto;
+    }
 }
 
 .demo-details-item,
@@ -46,6 +58,11 @@
     display: block;
     width: 80%;
     margin: 0 auto;
+
+    @include w600 {
+        width: 100%;
+    }
+
 }
 
 .demo-nav {

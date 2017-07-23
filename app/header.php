@@ -19,19 +19,18 @@
 
         <div class="hero"> <!-- start hero -->
             <header class="header">
-                <div class="hero-logo left">anthony<span class="blue">dias</span></div>
-                <div class="hero-menu right">
+                <div class="hero-logo">anthony<span class="blue">dias</span></div>
+                <div class="hero-menu">
                     <ul>
-                        <li class="hero-menu-item bold-font"><a href="#about">a propos</a></li>
-                        <li class="hero-menu-item bold-font"><a href="#projects">projets</a></li>
+                        <li class="hero-menu-item bold-font to-hide"><a href="#about">a propos</a></li>
+                        <li class="hero-menu-item bold-font to-hide"><a href="#projects">projets</a></li>
                         <li class="hero-menu-item bold-font"><a href="contact.php">contact</a></li>
                     </ul>
                 </div>
             </header>
-            <h1 class="h1">Your most unhappy customers are your greatest source of <span class="blue">learning</span>.</h1>
-            <div class="hero-desc">
-                - Bill Gates.
-            </div>
+            <h1 class="h1">Hi, I'm Anthony Dias,
+                <div>a <span class="light blue">creative</span>, <span class="somatic blue">curious</span> and <span class="ultrabold blue">involved</span> worker.</div>
+                <div>I'm an <span class="blue">UI Developer</span></div></h1>
         </div> <!-- end hero -->
 
     <?php } else { ?>

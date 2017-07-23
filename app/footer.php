@@ -14,7 +14,6 @@
         if($bodyclass != "demo") {?>
 
             <div class="footer-socials">
-                <a class="socials-item" href="https://www.facebook.com/lumpastyle/"><img src="assets/svg/facebook_black.svg" alt=""></a>
                 <a class="socials-item" href="https://www.behance.net/lumuix"><img src="assets/svg/behance_black.svg" alt=""></a>
                 <a class="socials-item" href="https://github.com/Lumpastyle"><img src="assets/svg/github_black.svg" alt=""></a>
                 <a class="socials-item" href="https://www.linkedin.com/in/anthonydiasuxuidesigner/"><img src="assets/svg/linkedin_black.svg" alt=""></a>
@@ -23,7 +22,6 @@
         <?php } else { ?>
 
             <div class="footer-socials">
-                <a class="socials-item" href="https://www.facebook.com/lumpastyle/"><img src="assets/svg/facebook_white.svg" alt=""></a>
                 <a class="socials-item" href="https://www.behance.net/lumuix"><img src="assets/svg/behance_white.svg" alt=""></a>
                 <a class="socials-item" href="https://github.com/Lumpastyle"><img src="assets/svg/github_white.svg" alt=""></a>
                 <a class="socials-item" href="https://www.linkedin.com/in/anthonydiasuxuidesigner/"><img src="assets/svg/linkedin_white.svg" alt=""></a>

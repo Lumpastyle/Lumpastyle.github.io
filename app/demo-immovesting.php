@@ -11,7 +11,7 @@ require_once 'header.php'; ?>
     <div class="demo-desc">
         <h3 class="demo-title">Détails du projet</h3>
         <p>
-            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            Au cours de mon alternance en tant qu'UX Designer chez Immovesting, ma plus grosse mission aura été de retravailler la charte graphique de la plateforme, redesigner les pages du site, et les intégrer. Cette mission de plusieurs mois est l'aboutissement de mon année de travail chez Immovesting.
         </p>
     </div>
     <div class="demo-infos">
