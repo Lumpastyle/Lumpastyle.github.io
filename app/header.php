@@ -10,6 +10,7 @@
     <?php } ?>
     <script src="js/jquery.min.js"></script>
     <script src="js/main-min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
 </head>
 
 <body class="<?=$bodyclass?>">
@@ -24,7 +25,7 @@
                     <ul>
                         <li class="hero-menu-item bold-font to-hide"><a href="#about">a propos</a></li>
                         <li class="hero-menu-item bold-font to-hide"><a href="#projects">projets</a></li>
-                        <li class="hero-menu-item bold-font"><a href="contact.php">contact</a></li>
+                        <li class="hero-menu-item bold-font"><a href="mailto:Lumpastyle@gmail.com">contact</a></li>
                     </ul>
                 </div>
             </header>
