@@ -4,7 +4,7 @@ $projectname = "echOpen";
 require_once 'header.php'; ?>
 
 <section class="demo-cover-primary">
-    <img src="assets/img/cover-test.png" alt="">
+    <img src="assets/img/echopen-1.png" alt="">
 </section>
 
 <section class="demo-details"> <!-- start details -->
@@ -35,7 +35,7 @@ require_once 'header.php'; ?>
 </section> <!-- end details -->
 
 <section class="demo-gallery"> <!-- start gallery -->
-    <img src="assets/img/maquette-test.png" alt="" class="demo-cover-secondary">
+    <div class="loud white">Visuels disponibles prochainement.</div>
 </section> <!-- end gallery -->
 
 <div class="demo-nav">

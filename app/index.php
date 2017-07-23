@@ -25,13 +25,13 @@ require_once 'header.php'; ?>
         </li>
         <li class="project-item">
             <a href="demo-tsoh.php">
-                <div class="project-image"><img src="assets/img/tsoh_logo.png" alt="logo_tsoh"></div>
+                <div class="project-image"><img src="assets/img/tsoh-logo.png" alt="logo_tsoh"></div>
                 <div class="project-name"><span class="">Tsoh Activities</span>, redesign onepage</div>
             </a>
         </li>
         <li class="project-item">
             <a href="demo-echopen.php">
-                <div class="project-image"><img src="assets/img/imv_logo.png" alt="logo_imv"></div>
+                <div class="project-image"><img src="assets/img/echopen-logo.png" alt="logo_echopen"></div>
                 <div class="project-name"><span class="">echOpen</span>, design et création de l'app</div>
             </a>
         </li>

@@ -61,13 +61,14 @@
         @extend %transition5;
     }
 
-    [alt="logo_twitch"] {
-        margin-top: 10px;
-    }
-
     [alt="logo_immovesting"] {
         max-width: 150px;
         margin-top: 13px;
+    }
+
+    [alt="logo_echopen"] {
+        max-width: 150px;
+        margin-top: 8px;
     }
 
     @include w1200 {
