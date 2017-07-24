@@ -7,7 +7,7 @@ require_once 'header.php'; ?>
     <p class="about-desc">
         Etudiant en 2ème année de Bachelor Web à <span>HETIC</span>, actuellement UX Designer chez Immovesting, je suis à la <span>recherche d’une alternance</span> pour Octobre 2017 en tant que Designer UI. Passionné d'<span>esport</span> et de jeux vidéos, j'aime relever les défis et la <span>compétition</span> est un moteur pour moi, que ce soit dans la vie ou dans les jeux.
         <br>
-        <a class="link" href="https://drive.google.com/file/d/0B8FgR6SThtw4aVA0cFRnSDI0R1E/view?usp=sharing">Télécharger mon CV</a>
+        <a class="link" href="https://drive.google.com/open?id=0B8FgR6SThtw4LWY4YUdzdEFCR3M">Télécharger mon CV</a>
     </p>
     <div class="bio_pic"></div>
 </section> <!-- end about -->
