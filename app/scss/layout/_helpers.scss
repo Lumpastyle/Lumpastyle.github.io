@@ -81,7 +81,7 @@ a { font-size: inherit; color: inherit; text-decoration: none;}
 .h1, .h2, .h3, .h4, .h5, .h6 { font-family: $my-font; font-weight: 600; }
 .h1, .h2 { line-height: 1.1; }
 .h3, .h4 { line-height: 1.3; }
-.h1 { font-size: 3.998em; letter-spacing: -2px; margin-top: 5em; @include w600 {margin-top:3em;}}
+.h1 { font-size: 3.998em; letter-spacing: -2px; margin-top: 5em; @include w1280 {margin-top:3em;}}
 .h2 { font-size: 2.827em; letter-spacing: -1px; }
 .h3 { font-size: 1.999em; }
 .h4 { font-size: 1.414em; }
