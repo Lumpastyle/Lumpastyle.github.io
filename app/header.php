@@ -2,7 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Anthony Dias - UI Developer</title>
+    <link rel="icon" href="assets/img/favicon-16.png" sizes="16x16">
+    <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="assets/img/favicon-64.png" sizes="64x64">
     <link rel="stylesheet" href="css/style.css">
     <?php
     if($bodyclass == "demo") { ?>
